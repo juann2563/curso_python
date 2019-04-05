@@ -29,5 +29,24 @@ while a==7:
         break """
 
 # ciclo for
-for i in range(0,5):
-    print(i)
+""" for i in range(0,5):
+    print(i) """
+#ejercicio algoritmo
+num1 = int(input("Ingrese dato 1: "))
+num2 = int(input("Ingrese dato 2: "))
+while True:
+    opcion = input('Ingrese S - suma, R - resta, M - multiplicacion, D - Division: ')
+    if opcion == 'S':
+        print("suma = " + str(num1 + num2))
+        break
+    if opcion == 'R':
+        print("resta = " + str(num1 - num2))
+        break
+    if opcion == 'M':
+        print("multiplicacion = " + str(num1 * num2))
+        break
+    if opcion == 'D':
+        print("division = " + str(num1 / num2))
+        break
+    else:
+        print("opcion no valida, ingrese una opcion valida")
