@@ -39,14 +39,17 @@ while True:
     if opcion == 'S':
         print("suma = " + str(num1 + num2))
         break
-    if opcion == 'R':
+    elif opcion == 'R':
         print("resta = " + str(num1 - num2))
         break
-    if opcion == 'M':
+    elif opcion == 'M':
         print("multiplicacion = " + str(num1 * num2))
         break
-    if opcion == 'D':
-        print("division = " + str(num1 / num2))
-        break
+    elif opcion == 'D':
+        if num2 == 0:
+            print("No se puede realizar division por 0, intente de nuevo")
+        else:
+            print("division = " + str(num1 / num2))
+            break
     else:
         print("opcion no valida, ingrese una opcion valida")
